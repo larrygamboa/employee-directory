@@ -9,7 +9,7 @@ class Wrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sortOrder: "A",
+      sortOrder: "ASC",
       employees: [],
       filterEmployees: []
     };
@@ -19,7 +19,7 @@ class Wrapper extends Component {
     this.handleSort = this.handleSort.bind(this);
   }
 
-  // Fetch the API
+  // Fetch the API data
   componentDidMount() {
     API.getEmployees()
       .then(res => {
@@ -32,6 +32,7 @@ class Wrapper extends Component {
       .catch(err => console.log(err))
   }
 
+  // Search the API for an employee
   searchEmployees(query) {
     API.getEmployees(query)
       .then(res => {
@@ -43,6 +44,7 @@ class Wrapper extends Component {
       .catch(err => console.log(err));
   };
 
+  // Search form function to search for an employee's name
   handleInputChange() {
     const value = document.querySelector("#search").value.toLowerCase();
     //filter search
@@ -52,15 +54,16 @@ class Wrapper extends Component {
     });
   };
 
+  // Sorting function for the employee name column
   handleSort() {
-    if (this.state.sortOrder === "A") {
+    if (this.state.sortOrder === "ASC") {
       const sortedEmployees = this.state.employees.sort((a, b) => {
         if (a.name.first.toLowerCase() < b.name.first.toLowerCase()) {
           return -1
         }
       });
       this.setState({
-        sortOrder:"D",
+        sortOrder:"DESC",
         filterEmployees: sortedEmployees
       });
     } else {
@@ -70,13 +73,13 @@ class Wrapper extends Component {
         }
       });
       this.setState({
-        sortOrder:"A",
+        sortOrder:"ASC",
         filterEmployees: sortedEmployees
       });
     }
   }
 
-
+  // Render the components
   render() {
     return (
       <div>
