@@ -11,6 +11,13 @@
     font-weight: 600;
 }
 
+/* For Tablet devices (tablets, 768px) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
 /* For Small devices (phones, 576px) */
 @media screen and (max-width: 576px) {
     .jumbotron h1 {
