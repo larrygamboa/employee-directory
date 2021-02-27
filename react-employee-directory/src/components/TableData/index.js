@@ -5,7 +5,7 @@ function TableData(props) {
     console.log(props);
     return (
         <div className="row">
-            <div className="container">
+            <div className="container bg-white">
             <table className="table">
                 <thead className="thead-dark">
                     <th scope="col">&nbsp;</th>

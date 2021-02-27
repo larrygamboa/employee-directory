@@ -1,11 +1,12 @@
 .jumbotron {
-    background-color: aqua;
+    background-color: #fd7e14;
+    margin-bottom: 0;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: #FFF;
 }
 
 .jumbotron h1 {
-    color: white
-}
-
-.jumbotron p {
-    color: white
+    font-weight: 600;
 }

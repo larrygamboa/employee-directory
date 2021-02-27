@@ -9,22 +9,21 @@ class SearchBar extends Component {
     render() {
         return (
             <div className="row">
-                <div className="container">
+                <div className="container bg-white">
                     <form className="form-inline">
                     <div className="form-group search-widget">
-                        <label htmlFor="search">Search For:</label>
+                        <label htmlFor="search"><strong>Search For:</strong></label>
                         <input
                             onChange={this.props.handleInputChange}
                             value={this.props.value}
                             name="search"
                             type="text"
-                            placeholder="Search the directory"
+                            placeholder="search the directory"
                             id="search"
                             className="form-control ml-2 mr-2"
                         />
                     </div>
                     </form>
-                    <hr />
                 </div>
             </div>
         );
