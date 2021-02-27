@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "../Header";
 import SearchBar from "../SearchBar";
 import TableData from "../TableData";
+import Footer from "../Footer";
 import API from "../../utils/api";
 
 class Wrapper extends Component {
@@ -87,6 +88,7 @@ class Wrapper extends Component {
           employees={this.state.filterEmployees}
           handleSort={this.handleSort}
         />
+        <Footer />
       </div>
     );
   }
