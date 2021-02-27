@@ -4,7 +4,7 @@
 https://github.com/larrygamboa/employee-directory
 
 **Deployed link**:
-
+https://larrygamboa.github.io/employee-directory/
 
 ## User Story
 
