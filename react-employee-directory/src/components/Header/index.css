@@ -14,10 +14,10 @@
 /* For Small devices (phones, 576px) */
 @media screen and (max-width: 576px) {
     .jumbotron h1 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     .jumbotron p {
-        font-size: 1rem;
+        font-size: 0.9375rem;
     }
 }

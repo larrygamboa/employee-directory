@@ -12,7 +12,7 @@ class SearchBar extends Component {
                 <div className="container bg-white">
                     <form className="form-inline">
                     <div className="form-group search-widget">
-                        <label htmlFor="search"><strong>Search For:</strong></label>
+                        <label htmlFor="search" className="ml-3"><strong>Search For:</strong></label>
                         <input
                             onChange={this.props.handleInputChange}
                             value={this.props.value}
@@ -20,7 +20,7 @@ class SearchBar extends Component {
                             type="text"
                             placeholder="search the directory"
                             id="search"
-                            className="form-control ml-2 mr-2"
+                            className="form-control ml-3"
                         />
                     </div>
                     </form>
